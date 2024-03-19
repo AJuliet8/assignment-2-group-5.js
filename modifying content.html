@@ -1,0 +1,29 @@
+<p id="myParagraph">Hello, world!</p>
+<button onclick="changeText()">Change Text</button>
+
+<script>
+  function changeText() {
+    document.getElementById('myParagraph').textContent = 'New content!';
+  }
+</script>
+
+
+<div id="myDiv"><p>Hello, world!</p></div>
+<button onclick="changeHTML()">Change HTML</button>
+
+<script>
+  function changeHTML() {
+    document.getElementById('myDiv').innerHTML = '<p>New content with <strong>HTML</strong> tags!</p>';
+  }
+</script>
+
+
+<img id="myImage" src="old_image.jpg" alt="Old Image">
+<button onclick="changeImage()">Change Image</button>
+
+<script>
+  function changeImage() {
+    document.getElementById('myImage').src = 'new_image.jpg';
+    document.getElementById('myImage').alt = 'New Image';
+  }
+</script>
